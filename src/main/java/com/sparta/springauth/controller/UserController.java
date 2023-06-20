@@ -35,14 +35,14 @@ public class UserController {
         return "login";
     }
 
-    @PostMapping("/user/login")
-    public String login(LoginRequestDto requestDto, HttpServletResponse res) {
-        try {
-            userService.login(requestDto, res);
-        } catch (Exception e) {
-            return "redirect:/api/user/login-page?error";
-        }
-
-        return "redirect:/";  // 다시 메인으로 가도록 하기
-    }
+//    @PostMapping("/user/login")
+//    public String login(LoginRequestDto requestDto, HttpServletResponse res) {
+//        try {
+//            userService.login(requestDto, res);
+//        } catch (Exception e) {
+//            return "redirect:/api/user/login-page?error";
+//        }
+//
+//        return "redirect:/";  // 다시 메인으로 가도록 하기
+//    }
 }
